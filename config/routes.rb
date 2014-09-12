@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root 'static#index'
   resources :users
+  get '/modal/', to: 'static#modal', as: :modal
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,28 @@
+!!!
+%html
+
+  %head
+    %title Nice Programing
+    = favicon_link_tag 'worker.png'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    / Custom CSS
+    = stylesheet_link_tag 'bootstrap.css'
+    = stylesheet_link_tag 'freelancer.css'
+    / Custom Fonts
+    = stylesheet_link_tag 'font-awesome.min.css'
+    %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+
+
+  %body#page-top.index
+    = render 'layouts/navbar'
+    %br
+    %br
+    = yield
+    = render 'layouts/footer'
+    / Plugin JavaScript
+    %script{:src => "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"}

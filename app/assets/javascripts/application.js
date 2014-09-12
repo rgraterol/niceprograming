@@ -17,8 +17,8 @@
 //= require bootstrap
 //= require contact_me
 //= require freelancer
-//= require classie.js
-//= require cbpAnimatedHeader
-//= require jqBootstrapValidation.js
+//= require classie
+//= require cbpAnimatedHeader.js
+//= require jqBootstrapValidation
 //= require_tree .
 

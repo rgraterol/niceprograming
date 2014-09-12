@@ -1,0 +1,23 @@
+.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header.page-scroll
+      %a.navbar-toggle(data-toggle= 'collapse' data-targer='#bs-example-navbar-collapse-1')
+        %span.sr-only Toogle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Nice Programing', root_path, class: 'navbar-brand'
+
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+      %ul.nav.navbar-nav.navbar-right
+        %li.hidden
+          %a(href="#page-top")
+        %li.page-scroll
+          %a(href="#portfolio") Tutoriales
+        %li.page-scroll
+          = link_to 'Usuarios', users_path
+        %li.page-scroll
+          %a(href="#contact") Contacto
+
+
+
